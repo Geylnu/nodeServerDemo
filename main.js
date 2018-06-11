@@ -17,4 +17,10 @@ function JSONP(url,callback){
     }
 }
 
-JSONP('./test',function (z){console.log(z)})
+JSONP('./test',function (z){
+    money.innerText=z
+})
+
+draw.onclick = ()=>{JSONP('./test',function (z){
+    money.innerText=z
+})}
