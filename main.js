@@ -21,6 +21,6 @@ JSONP('./test',function (z){
     money.innerText=z
 })
 
-draw.onclick = ()=>{JSONP('./test',function (z){
+draw.onclick = ()=>{JSONP('http://localhost:8666/test',function (z){
     money.innerText=z
 })}
